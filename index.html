@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUTP</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <h1>CUTP</h1>
+            <p>Управление пользователями, задачами и постами</p>
+        </div>
+        
+        <div class="breadcrumbs" id="breadcrumbs"></div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Поиск...">
+        </div>
+        
+        <div class="content" id="content">
+            <div class="loading">Загрузка...</div>
+        </div>
+    </div>
+
+    <script src="js/components/ComponentUtils.js"></script>
+    <script src="js/services/ApiService.js"></script>
+    <script src="js/services/StorageService.js"></script>
+    <script src="js/services/Router.js"></script>
+    <script src="js/utils/SearchService.js"></script>
+    <script src="js/components/Breadcrumbs.js"></script>
+    <script src="js/components/UsersPage.js"></script>
+    <script src="js/components/TodosPage.js"></script>
+    <script src="js/components/PostsPage.js"></script>
+    <script src="js/components/CommentsPage.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
