@@ -1,14 +1,17 @@
 class Router {
     static init() {
         window.addEventListener('hashchange', () => this.route());
-        this.route();
+        // Даем время на создание DOM элементов
+        setTimeout(() => this.route(), 100);
     }
 
     static route() {
         const hash = window.location.hash.slice(1);
         const [mainRoute, subRoute, param] = hash.split('#');
         
-        const searchTerm = document.getElementById('searchInput').value;
+        // Безопасное получение searchInput
+        const searchInput = document.getElementById('searchInput');
+        const searchTerm = searchInput ? searchInput.value : '';
 
         switch (mainRoute) {
             case 'users':
