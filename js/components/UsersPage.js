@@ -1,4 +1,10 @@
-class UsersPage {
+import { ApiService } from '../services/ApiService.js';
+import { StorageService } from '../services/StorageService.js';
+import { ComponentUtils } from './ComponentUtils.js';
+import { Router } from '../services/Router.js';
+import { Breadcrumbs } from './Breadcrumbs.js';
+
+export class UsersPage {
     static async render(searchTerm = '') {
         try {
             const [apiUsers, localUsers] = await Promise.all([

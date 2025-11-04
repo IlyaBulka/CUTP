@@ -1,4 +1,6 @@
-class SearchService {
+import { Router } from '../services/Router.js';
+
+export class SearchService {
     static init() {
         let timeout;
         const searchInput = document.getElementById('searchInput');

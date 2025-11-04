@@ -1,4 +1,9 @@
-class App {
+import { Router } from './services/Router.js';
+import { SearchService } from './utils/SearchService.js';
+import { StorageService } from './services/StorageService.js';
+import { ComponentUtils } from './components/ComponentUtils.js';
+
+export class App {
     static init() {
         // Сначала создаем базовую структуру DOM
         this.createAppStructure();
@@ -52,7 +57,7 @@ class App {
             const sampleUsers = [
                 {
                     id: 11,
-                    name: "Локальный Пользователь 1",
+                    name: "Локальный",
                     email: "local.user1@example.com",
                     username: "localuser1",
                     address: {
@@ -75,8 +80,3 @@ class App {
         }
     }
 }
-
-// Запуск приложения
-document.addEventListener('DOMContentLoaded', () => {
-    App.init();
-});

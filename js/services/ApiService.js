@@ -1,4 +1,4 @@
-class ApiService {
+export class ApiService {
     static async fetchWithDelay(url, delay = 200) {
         await new Promise(resolve => setTimeout(resolve, delay));
         try {

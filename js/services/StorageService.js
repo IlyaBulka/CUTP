@@ -1,4 +1,4 @@
-class StorageService {
+export class StorageService {
     static getLocalUsers() {
         try {
             return JSON.parse(localStorage.getItem('localUsers') || '[]');

@@ -1,4 +1,10 @@
-class TodosPage {
+import { ApiService } from '../services/ApiService.js';
+import { StorageService } from '../services/StorageService.js';
+import { ComponentUtils } from './ComponentUtils.js';
+import { Router } from '../services/Router.js';
+import { Breadcrumbs } from './Breadcrumbs.js';
+
+export class TodosPage {
     static async render(userId = null, searchTerm = '') {
         try {
             const [apiTodos, localTodos] = await Promise.all([

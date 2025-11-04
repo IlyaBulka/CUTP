@@ -1,4 +1,9 @@
-class Router {
+import { UsersPage } from '../components/UsersPage.js';
+import { PostsPage } from '../components/PostsPage.js';
+import { TodosPage } from '../components/TodosPage.js';
+import { CommentsPage } from '../components/CommentsPage.js';
+
+export class Router {
     static init() {
         window.addEventListener('hashchange', () => this.route());
         // Даем время на создание DOM элементов

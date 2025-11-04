@@ -18,13 +18,13 @@ body {
 }
 
 .header {
-    background: #495057;
-    color: #f8f9fa;
+    background: #fefe22;
+    color: #7df9ff;
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
     text-align: center;
-    border-left: 4px solid #343a40;
+    border-left: 4px solid #fefe22;
 }
 
 .header h1 {
@@ -62,17 +62,17 @@ body {
 }
 
 .breadcrumbs {
-    background: #e9ecef;
+    background: #fefe22;
     padding: 1rem 1.5rem;
     border-radius: 6px;
     margin-bottom: 1.5rem;
     font-size: 14px;
-    border-left: 3px solid #adb5bd;
+    border-left: 3px solid #fefe22;
 }
 
 .breadcrumb-item {
     display: inline-block;
-    color: #495057;
+    color: #7df9ff;
     cursor: pointer;
     font-weight: 500;
     transition: color 0.2s ease;
@@ -80,21 +80,21 @@ body {
 
 .breadcrumb-item:not(:last-child):after {
     content: " › ";
-    color: #6c757d;
+    color: #7df9ff;
     margin: 0 8px;
 }
 
 .breadcrumb-item:hover {
-    color: #212529;
+    color: #7df9ff;
 }
 
 .breadcrumb-item:last-child {
-    color: #6c757d;
+    color: #7df9ff;
     cursor: default;
 }
 
 .breadcrumb-item:last-child:hover {
-    color: #6c757d;
+    color: #7df9ff;
 }
 
 .content {
@@ -118,8 +118,8 @@ body {
 }
 
 .card {
-    background: #fff;
-    border: 1px solid #e9ecef;
+    background: #ccff00;
+    border: 1px solid #ccff00;
     border-radius: 8px;
     padding: 1.5rem;
     transition: all 0.2s ease;
@@ -132,13 +132,13 @@ body {
 }
 
 .user-card {
-    border-left: 4px solid #495057;
-    background: #f8f9fa;
+    border-left: 4px solid #ccff00;
+    background: #ccff00;
 }
 
 .user-card.local-user {
-    border-left-color: #dc3545;
-    background: #fff5f5;
+    border-left-color: #ccff00;
+    background: #ccff00;
 }
 
 .todo-card {
@@ -178,12 +178,12 @@ body {
 }
 
 .add-user-form {
-    background: #e7f3ff;
+    background: #f80000;
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
-    border: 1px solid #b3d7ff;
-    border-left: 4px solid #0d6efd;
+    border: 1px solid #f80000;
+    border-left: 4px solid #f80000;
 }
 
 .add-user-form h3 {
@@ -231,12 +231,12 @@ body {
 }
 
 .btn-primary {
-    background: #495057;
+    background:  #bc13fe;
     color: #fff;
 }
 
 .btn-primary:hover:not(:disabled) {
-    background: #343a40;
+    background:  #bc13fe;
 }
 
 .btn-danger {
@@ -249,7 +249,7 @@ body {
 }
 
 .btn-success {
-    background: #198754;
+    background: #7df9ff;
     color: #fff;
 }
 

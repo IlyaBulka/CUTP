@@ -1,4 +1,5 @@
-class ComponentUtils {
+
+export class ComponentUtils {
     static createElement(tag, attributes = {}, content = '') {
         const element = document.createElement(tag);
         

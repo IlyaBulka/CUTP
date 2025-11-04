@@ -1,4 +1,10 @@
-class CommentsPage {
+import { ApiService } from '../services/ApiService.js';
+import { StorageService } from '../services/StorageService.js';
+import { ComponentUtils } from './ComponentUtils.js';
+import { Router } from '../services/Router.js';
+import { Breadcrumbs } from './Breadcrumbs.js';
+
+export class CommentsPage {
     static async render(postId = null, searchTerm = '') {
         try {
             const comments = await ApiService.getComments();

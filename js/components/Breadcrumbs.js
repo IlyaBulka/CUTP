@@ -1,4 +1,7 @@
-class Breadcrumbs {
+import { ComponentUtils } from './ComponentUtils.js';
+import { Router } from '../services/Router.js';
+
+export class Breadcrumbs {
     static render() {
         const hash = window.location.hash.slice(1);
         const parts = hash.split('#').filter(Boolean);
